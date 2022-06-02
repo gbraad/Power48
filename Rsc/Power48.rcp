@@ -1,0 +1,464 @@
+GENERATEHEADER "Power48Rsc.h"
+
+RESETAUTOID 2000
+
+
+
+
+
+ALERT ID RomIncompatibleAlert 
+	ERROR
+BEGIN
+	TITLE "System Incompatible"
+	MESSAGE "This version of Power48 requires PalmOS 5.0 or greater."
+	BUTTONS "OK"
+END
+
+ALERT ID NoHiResLibraryAlert
+	ERROR 
+BEGIN
+	TITLE "No High Density Ftr Set"
+	MESSAGE "This version of Power48 requires the presence of the PalmOS High Densi" \
+	"ty Feature Set."
+	BUTTONS "OK"
+END
+
+ALERT ID NoColorSupportAlert
+	ERROR
+BEGIN
+	TITLE "16-bit color unavailable"
+	MESSAGE "Power48 requires a color screen with 16-bit color depth to run."
+	BUTTONS "OK"
+END
+
+ALERT ID NoOffscreenWindowsAlert
+	ERROR
+BEGIN
+	TITLE "Unable to create  windows"
+	MESSAGE "Power48 was unable to create all of the offscreen windows necessary for" \
+	" GUI implementation."
+	BUTTONS "OK"
+END
+
+ALERT ID UnableToRegisterAlert
+	ERROR
+BEGIN
+	TITLE "Notifier Registration Error"
+	MESSAGE "Power48 was unable to register for all of the notifications it needs."
+	BUTTONS "OK"
+END
+
+ALERT ID NoHDScreenAlert
+	ERROR
+BEGIN
+	TITLE "No High Density Screen"
+	MESSAGE "This version of Power48 requires the presence of a High Density screen " \
+	"supporting a minimum 320x320 resolution."
+	BUTTONS "OK"
+END
+
+
+
+BITMAPFAMILYEX ID TitleLogoBitmapFamily
+BEGIN
+	BITMAP "logo_inverted_8bit_CT.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49gTileBitmapFamily
+BEGIN
+	BITMAP "Tbmp047F-16-d144.bmp" BPP 16
+		COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gxTileBitmapFamily
+BEGIN 
+	BITMAP "Tbmp0480-16-d144.bmp" BPP 16
+		COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sxTileBitmapFamily
+BEGIN
+	BITMAP "Tbmp0481-16-d144.bmp" BPP 16
+		COMPRESS DENSITY 2 
+END
+ 
+BITMAPFAMILYEX ID Hp48gxp1BitmapFamily
+BEGIN
+	BITMAP "Tbmp04B0-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gxp2BitmapFamily
+BEGIN
+	BITMAP "Tbmp04B1-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gxp3BitmapFamily
+BEGIN
+	BITMAP "Tbmp04B2-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gxp4BitmapFamily
+BEGIN
+	BITMAP "Tbmp04B3-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gxMiniBitmapFamily
+BEGIN
+	BITMAP "Tbmp04BA-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gx320p1BitmapFamily
+BEGIN
+	BITMAP "Tbmp04E2-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gx320p2BitmapFamily
+BEGIN
+	BITMAP "Tbmp04E3-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48gx320p3BitmapFamily
+BEGIN
+	BITMAP "Tbmp04E4-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sxp1BitmapFamily
+BEGIN
+	BITMAP "Tbmp05DC-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sxp2BitmapFamily
+BEGIN
+	BITMAP "Tbmp05DD-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sxp3BitmapFamily
+BEGIN
+	BITMAP "Tbmp05DE-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sxp4BitmapFamily
+BEGIN
+	BITMAP "Tbmp05DF-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sxMiniBitmapFamily
+BEGIN
+	BITMAP "Tbmp05E6-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sx320p1BitmapFamily
+BEGIN
+	BITMAP "Tbmp060E-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sx320p2BitmapFamily
+BEGIN
+	BITMAP "Tbmp060F-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp48sx320p3BitmapFamily
+BEGIN
+	BITMAP "Tbmp0610-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID ColorSelectorBitmapFamily
+BEGIN
+	BITMAP "Tbmp0640-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID AnnunciatorMapBitmapFamily
+BEGIN
+	BITMAP "Tbmp0708-16-d144.bmp" BPP 16
+		COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID ObjectLoadDialogBitmapFamily
+BEGIN
+	BITMAP "Tbmp076C-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID ObjectSaveDialogBitmapFamily
+BEGIN
+	BITMAP "objectSave.bmp" BPP 8
+		COLORTABLE TRANSPARENT 31 63 31 COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID AlertDialogBitmapFamily
+BEGIN
+	BITMAP "Tbmp0776-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID ConfirmDialogBitmapFamily
+BEGIN
+	BITMAP "Tbmp0777-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID PrefGeneralDialogBitmapFamily
+BEGIN
+	BITMAP "prefgeneral.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Pref48GXDialogBitmapFamily
+BEGIN
+	BITMAP "pref48GX.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Pref48SXDialogBitmapFamily
+BEGIN
+	BITMAP "pref48SX.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Pref49GDialogBitmapFamily
+BEGIN
+	BITMAP "pref49G.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID PrefCheckboxGraphicBitmapFamily
+BEGIN
+	BITMAP "Tbmp078A-16-d144.bmp" BPP 16
+		COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49gp1BitmapFamily
+BEGIN
+	BITMAP "Tbmp07D0-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49gp2BitmapFamily
+BEGIN
+	BITMAP "Tbmp07D1-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49gp3BitmapFamily
+BEGIN
+	BITMAP "Tbmp07D2-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49gp4BitmapFamily
+BEGIN
+	BITMAP "Tbmp07D3-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49gMiniBitmapFamily
+BEGIN
+	BITMAP "Tbmp07DA-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49g320p1BitmapFamily
+BEGIN
+	BITMAP "Tbmp0802-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49g320p2BitmapFamily
+BEGIN
+	BITMAP "Tbmp0803-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID Hp49g320p3BitmapFamily
+BEGIN
+	BITMAP "Tbmp0804-8-d144.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID mini48SXBitmapFamily
+BEGIN
+	BITMAP "mini48SX.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID mini48GXBitmapFamily
+BEGIN
+	BITMAP "mini48GX.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID mini49GBitmapFamily 
+BEGIN
+	BITMAP "mini49G.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID noImageBitmapFamily 
+BEGIN
+	BITMAP "imagenotavailable.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2  
+END
+
+
+BITMAPFAMILYEX ID digitsSmallBitmapFamily
+BEGIN
+	BITMAP "digits_small_8.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID saturnMHzBitmapFamily 
+BEGIN
+	BITMAP "SaturnMHz_panel_8.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END
+
+BITMAPFAMILYEX ID saturnMIPSBitmapFamily 
+BEGIN
+	BITMAP "SaturnMIPS_panel_8.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END  
+
+BITMAPFAMILYEX ID zekeBitmapFamily 
+BEGIN
+	BITMAP "p48zeke_8.bmp" BPP 8
+		COLORTABLE COMPRESS DENSITY 2 
+END 
+
+
+
+ICONFAMILYEX ID 1000
+BEGIN
+	BITMAP "hp_icon_8_d144_large.bmp" BPP 8 DENSITY 2 
+	BITMAP "hp_icon_1_d144_large.bmp" BPP 1 DENSITY 2 
+	BITMAP "hp_icon_8_d72_large.bmp" BPP 8
+	BITMAP "hp_icon_1_d72_large.bmp" BPP 1
+END
+
+ICONFAMILYEX ID 1001
+BEGIN
+	BITMAP "hp_icon_8_d144_small.bmp" BPP 8 DENSITY 2 
+	BITMAP "hp_icon_1_d144_small.bmp" BPP 1 DENSITY 2 
+	BITMAP "hp_icon_8_d72_small.bmp" BPP 8
+	BITMAP "hp_icon_1_d72_small.bmp" BPP 1
+END
+
+
+
+
+
+FORM ID MainForm AT (0 0 160 160)
+	NOFRAME NOSAVEBEHIND 
+BEGIN
+END
+
+
+
+
+
+
+STRING ID fileExistsString "Overwrite the existing file?"
+
+STRING ID noROMFilesString "Power48 is unable to locate any ROM files."
+
+STRING ID pleaseReinsertCardString "Power48 RAM/ROM storage card removed! Please reinsert or risk corruptin" \
+	"g data..."
+
+STRING ID retryAfterInsertString "Unable to save RAM image(s). Replace storage card and press YES to atte" \
+	"mpt to save RAM image(s) again."
+
+STRING ID turnOffCalcBeforeCardString "Please turn off calculator before attempting to insert or remove expans" \
+	"ion card."
+
+STRING ID noVFSDirectoryString "Power48 was unable to find the directory /PALM/PROGRAMS/ Power48/Object" \
+	"s/ on the storage card."
+
+STRING ID unableToFindPort1FileString "Power48 was unable to locate a port 1 image file. A new file will be cr" \
+	"eated."
+
+STRING ID errorDisplayingPrefScreenString "Power48 encountered an error trying to display the preferences screen."
+
+STRING ID errorDisplayingOLSString "Power48 encountered an error trying to display the OLS screen."
+
+STRING ID unableToAllocateRAMString "Power48 was unable to allocate enough memory for RAM image."
+
+STRING ID unableToAllocateRAMPORT1String "Power48 was unable to allocate memory for RAM/PORT1 image combination."
+
+STRING ID unableToFindRAMFileString "Power48 was unable to locate a RAM image file. A new file will be creat" \
+	"ed."
+
+STRING ID unableToFindROMFileString "Power48 was unable to locate a valid ROM image."
+
+STRING ID unableToAllocateROMString "Power48 was unable to allocate enough memory for the ROM image."
+
+STRING ID invalidROMHeaderString "The header on the ROM image file is invalid. Please replace the ROM ima" \
+	"ge with a valid image."
+
+STRING ID unableToLoadStateFileString "Power48 was unable to load the calculator state file correctly. Calcula" \
+	"tor will reset to default state."
+
+STRING ID unableToSaveStateFileString "Power48 was unable to save the calculator state file correctly. State m" \
+	"ay be corrupt on next startup."
+
+STRING ID unableToSaveRAMImageString "Power48 is unable to save the RAM image file. The calculator may reset " \
+	"itself on next startup."
+
+STRING ID unableToSavePORT1ImageString "Power48 is unable to save the PORT1 image file. The calculator may rese" \
+	"t itself on next startup."
+
+STRING ID savedRAMFileInvalidString "The saved RAM image file is invalid. Press \"YES\" to save the file aga" \
+	"in, or \"NO\" to ignore."
+
+STRING ID savedPORT1FileInvalidString "The saved PORT1 image file is invalid. Press \"YES\" to save the file a" \
+	"gain, or \"NO\" to ignore."
+
+STRING ID checkResetString "Are you sure you want to simulate pressing the reset button on the acti" \
+	"ve target?"
+
+STRING ID errorReadingRAMString "Power48 encountered an error while trying to rea" \
+	"d the RAM image."
+
+STRING ID errorReadingPort1String "Power48 encountered an error while trying to rea" \
+	"d the Port1 image."
+
+STRING ID errorReadingROMString "Power48 encountered an error while trying to rea" \
+	"d the ROM image."
+	
+STRING ID badMagicString "There is a mismatch between state and RAM data. Would you like to " \
+	"reset the calculator to factory conditions?"
+
+STRING ID corruptionWarningString "Warning: Using mismatched state / RAM date can cause corruption. " \
+	"Proceed at your own risk."
+
+STRING ID resetAlertString "Are you sure you want to reset the calculator to factory conditions?"
+
+STRING ID errorRAMImageCorruptString "RAM image file corrupted - calculator will reset itself."
+
+STRING ID errorPORT1ImageCorruptString "PORT1 image file corrupted - calculator will reset itself."
+
+STRING ID errorStateImageCorruptString "State image file corrupted - calculator will reset itself."
+
+STRING ID volumeProtectedString "Storage card write protected - unable to save RAM image(s). Disable " \
+	"write protection and press YES to attempt to save RAM image(s) again."
+
+STRING ID coreProblemString "Emulator core exited due to invalid opcode."
+
+STRING ID invalidROMChecksum "Checksums do not match. Rom may be corrupted."
+ 

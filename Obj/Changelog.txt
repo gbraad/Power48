@@ -1,0 +1,86 @@
+Log of changes for Power48 BETA versions
+---------------------------------------------
+Nov. 8, 2004
+
+
+1.4 BETA:
+---------
+
+1. Initial BETA Release.
+
+
+
+
+
+1.4 BETA2:
+---------
+
+1. Fixed problem where clearing calculator RAM caused fatal error on machines with small dynamic heaps.
+
+
+
+
+
+1.4 BETA3:
+----------
+11/8/2004 4:01PM
+1. Fixed memory leak with presentation of dialog boxes.
+2. Adjusted timing for PalmOS virtual character, hardkey, and keyboard support.
+
+
+
+
+
+1.4 BETA4:
+----------
+
+1. Fixed LCD display problem which caused iQue 3600's to draw a blank screen when raising / lowering the VG area. This may also cure the 'No Shadow Window' problem that some users were experiencing.
+
+Many thanks to Sidney Nettles for his help in debugging this particular problem!
+
+
+2. Fixed several major bugs in the background image handling code.
+3. Fixed function key label overwrite problem when pressing a function key that causes the label to change.
+
+
+
+1.5 BETA:
+---------
+
+1. ROM/RAM images and Object files can now be converted to .pdb format and stored directly in internal memory
+2. Registered .p48ram, .p48rom, and .p48obj with default directories to enable hotsync directly to memory card
+3. Emulator no longer requires memory card to run
+4. Implemented shift-hold for left and right shift keys 
+5. Screen zoom saved between sessions
+6. Numerous other fixes and changes that I've long since forgotten...
+
+
+
+1.5 BETA2:
+---------
+
+1. MAJOR BUG FIX: Fixed intermittent lock-up due to keyboard handling routine modifications
+2. Enhanced support for PalmOne 5-Way navigator and Tapwave Zodiac Navigator
+3. Fixed bug in NSRC opcode identified via Emu48 1.35 (Thanks Christoph Giesselink!)
+4. Implemented global key click sound option
+5. Fixed highlighting bug in general preferences screen
+6. Fixed memory allocation bug that affected low-mem devices like Tungsten T.
+7. LCD toggle via voice-memo button disabled if not at 320x320 resolution.
+8. Reverted timing code to use PACE supported TimGetTicks implementation instead of direct API access.
+9. Revamped timing code for greater performance
+10. Added battery saving code (activated when 'True calculator speed' option is selected)
+
+
+1.5 (final release)
+-------------------
+
+1. Update the Object Converter Win32 application (p48obj.exe) to handle long file names and full paths more gracefully
+2. Altered memory allocation slightly to fix problem with 49G target on Tungsten T5.
+
+
+
+1.5.1 (emergency update release)
+--------------------------------
+
+1. MAJOR BUG FIX: Keyboard handling issue with alpha-shifted keys in 320x320 mode fixed. Should fix slowdowns and lock-ups some were seeing.
+2. Altered memory allocation a little further to fix a different problem with 49G target on Tungsten T5.
